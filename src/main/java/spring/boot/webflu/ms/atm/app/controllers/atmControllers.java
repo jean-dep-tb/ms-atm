@@ -72,15 +72,16 @@ public class atmControllers {
 	}
 	
 	@PostMapping("/transferenciaBanco")
-	public Mono<Atm> guardarMovTransf(@RequestBody Atm atm) {
+	public Mono<Atm> transferenciaCuentas(@RequestBody Atm atm) {
 			return bancoService.atmTransferencia(atm);
 	}
 	
 	@PostMapping("/pagoCuentaCredito")
-	public Mono<Atm> guardarMovPagos(@RequestBody Atm atm) {
+	public Mono<Atm> pagoCredito(@RequestBody Atm atm) {
 			return bancoService.atmPagoCredito(atm);
 
 	}
+	
 	
 	
 	

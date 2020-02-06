@@ -329,16 +329,9 @@ public class AtmServiceImpl implements AtmService {
 						
 					});
 					
-					
-					
-					
 				}
 				
 			});
-			
-			
-			
-			
 			
 		});
 		
